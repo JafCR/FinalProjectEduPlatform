@@ -1,0 +1,4 @@
+Contracts deployed to Rinkeby
+
+EducationPlatform.sol
+https://rinkeby.etherscan.io/tx/0xcaf760756e353b57821533c9fade7469c95be11928863c58a43d18c4a4a4b38e
