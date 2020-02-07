@@ -66,18 +66,5 @@ contract("EducationPlatform", accounts => {
 
     assert.equal(balance, 2, "The course has not been purchased");   
 
-  });
-
-  it("..should Withdraw funds", async() => {
-
-    const instance = await EducationPlatform.deployed();
-
-    await instance.withdrawCourseFunds(0, 0, {from: accounts[0]});
-
-    const ownerBalance = await web3.eth.getBalance(accounts[0]);
-    const toEther = web3.utils.fromWei(ownerBalance.toString(), 'ether');
-
-    assert.equal(toEther > 100, true, "Funds have not been withdrawned");
-
   });  
 });
